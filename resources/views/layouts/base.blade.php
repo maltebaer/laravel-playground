@@ -16,7 +16,8 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+        <link rel="stylesheet" href="{{ Vite::asset('resources/sass/app.scss') }}">
+        <script type="module" src="{{ Vite::asset('resources/js/app.js') }}"></script>
         @livewireStyles
         @livewireScripts
 
